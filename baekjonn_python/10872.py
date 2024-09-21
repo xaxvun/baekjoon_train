@@ -7,11 +7,11 @@
 # print(k)
 
 #함수로 만들어 보기
-def factory (n):
+def factorial(n):
     result = 1
-    if n>0:
-        result *= 
-    return n
+    if n > 0 :
+        result = n * factorial(n-1)
+    return result
 
 n = int(input())
-print(factory(n))
+print(factorial(n))
